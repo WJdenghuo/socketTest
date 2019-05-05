@@ -12,8 +12,9 @@ namespace SocketCilent
         {
             Console.WriteLine("Hello World!");
             ClientSocket clientSocket = ClientSocket.CreateInstance();
-            clientSocket.ConnectServer("127.0.0.1", 8078);
-            clientSocket.SendMessage("hello");
+            clientSocket.ConnectServer("192.168.25.124", 8078);
+            clientSocket.SendMessage(Console.ReadLine());
+            Console.ReadKey();
         }
         
     }
