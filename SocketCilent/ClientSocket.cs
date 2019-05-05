@@ -121,10 +121,7 @@ namespace SocketCilent
                     NetBufferReader reader = new NetBufferReader(m_result);
                     string data = reader.ReadString();
                     Console.WriteLine("服务器返回数据：" + data);
-                    if (onGetReceive != null)
-                    {
-                        onGetReceive(data);
-                    }
+                    onGetReceive?.Invoke(data);
 
                 }
                 catch (Exception ex)
