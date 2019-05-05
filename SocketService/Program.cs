@@ -11,7 +11,7 @@ namespace SocketService
     {
         static byte[] m_result = new byte[1024];//存放接收的数据
         const int m_port = 8078;//端口号
-        static string m_localIp = "127.0.0.1";
+        static string m_localIp = "192.168.25.124";
         static Socket m_serverSocket;//服务器socket
         static List<Socket> m_clientSocketList = new List<Socket>();//存放连接上的的客户端服务器
 
